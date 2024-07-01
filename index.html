@@ -4,10 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website A</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/a0dd751e03.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a0dd751e03.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -21,10 +18,10 @@
             <li class="work">
               <div class="toggle-right">
                   <a class="hover" href="#">Work</a>
-                  <button class="dropdown-toggle ">⌄</button>
+                  <button class="dropdown-toggle work-menu">⌄</button>
               </div>  
                   
-              <ul class="sub-menu">
+              <ul class="sub-menu work-menu">
                 <li class="paintings">
                   <a class="hover" href="paintings.html">Paintings</a>
                 </li>
@@ -34,19 +31,19 @@
                 <li class="exhibits">
                     <div class="toggle-right">
                   <a class="hover" href="#">Exhibitions</a>
-                  <button class="dropdown-toggle">⌄</button>
+                  <button class="dropdown-toggle exhibit-menu">⌄</button>
                 </div>
-                  <ul class="sub-menu">
+                  <ul class="sub-menu exhibit-menu">
                     <li class="exhibit-one">
                       <a class="hover" href="exhibitOne.html"
-                        >“Victoria Roth,” Brennan & Griffin</a
+                        >“Pears,” Tommy & Tommy Gallery</a
                       >
                     </li>
                     <li class="exhibit-two">
-                      <a class="hover" href="#">“Off the Banks,” Brennan & Griffin</a>
+                      <a class="hover" href="#">TBA</a>
                     </li>
                     <li class="exhibit-three hover">
-                      <a class="hover" href="#">“Insides,” fan Kunstverein</a>
+                      <a class="hover" href="#">TBA</a>
                     </li>
                   </ul>
                 </li>
@@ -58,12 +55,12 @@
             <li class="contact">
               <div class="toggle-right">
                 <a class="hover" href="#">Contact</a>
-                <button class="dropdown-toggle">⌄</button>
+                <button class="dropdown-toggle contact-menu">⌄</button>
               </div>
-              <ul class="sub-menu">
+              <ul class="sub-menu contact-menu">
                 <li class="hover" class="email">janedoe@gmail.com</li>
                 <li class="instagram">
-                  <a class="hover" href="#" class="fab fa-instagram"></a>
+                  <i class="fa-brands fa-instagram hover"></i>
                 </li>
               </ul>
             </li>
@@ -78,4 +75,5 @@
       </div>
     </div>
   </body>
+  <script src="scripts.js"></script>
 </html>

@@ -109,6 +109,10 @@ a{
     padding-bottom: 12px;
 }
 
+.toggle-open{
+    display: block;
+}
+
 
 
 /*images and content*/
