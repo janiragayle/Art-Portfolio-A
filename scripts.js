@@ -11,17 +11,15 @@ function handleClick(e){
         //console.log(subMenu);
         let secondTargetClass = e.target.classList[1];
         let secondSubMenuClass = subMenu.classList[1];
-        if(secondTargetClass === secondSubMenuClass){
-            console.log([secondTargetClass, secondSubMenuClass]);
-        }
         
-        if(subMenu.classList[2] === "toggle-open" && e.target.classList[1] === subMenu.classList[1]){
+        if(subMenu.classList[2] === "toggle-open" && secondTargetClass === secondSubMenuClass){
             subMenu.classList.remove("toggle-open");
-        } else if(e.target.classList[1] === subMenu.classList[1]){
+        } else if(secondTargetClass === secondSubMenuClass){
             subMenu.classList.add("toggle-open");
+            console.log(e)
         }
         
-    })
-}
+    });
+};
 
 arrowButtons.forEach(arrowButton => arrowButton.addEventListener('click', handleClick));
